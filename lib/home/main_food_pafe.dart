@@ -16,9 +16,12 @@ class MainFoodPage extends StatefulWidget {
 class _MainFoodPageState extends State<MainFoodPage> {
   @override
   Widget build(BuildContext context) {
+    // to find the height of the screen
+    // print("height" + MediaQuery.of(context).size.height.toString());
     return Scaffold(
       body: Column(
         children: [
+          // this container showing the header/navbar
           Container(
             child: Container(
               margin: EdgeInsets.only(top: 65, bottom: 15),
@@ -60,6 +63,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
               ),
             ),
           ),
+          //this foodpage is showing the body
           FoodPageBody(),
         ],
       ),
