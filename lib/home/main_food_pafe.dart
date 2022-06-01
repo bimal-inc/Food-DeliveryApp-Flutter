@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery/home/food_page_body.dart';
 import 'package:food_delivery/utils/colors.dart';
+import 'package:food_delivery/utils/dimensions.dart';
 import 'package:food_delivery/widgets/bigtext.dart';
 import 'package:food_delivery/widgets/smallText.dart';
 
@@ -24,8 +25,10 @@ class _MainFoodPageState extends State<MainFoodPage> {
           // this container showing the header/navbar
           Container(
             child: Container(
-              margin: EdgeInsets.only(top: 65, bottom: 15),
-              padding: EdgeInsets.only(left: 20, right: 20),
+              margin: EdgeInsets.only(
+                  top: Dimensions.height65, bottom: Dimensions.height15),
+              padding: EdgeInsets.only(
+                  left: Dimensions.width20, right: Dimensions.width20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -41,7 +44,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
                             text: "City",
                             color: Colors.black54,
                           ),
-                          Icon(Icons.arrow_drop_down)
+                          Icon(Icons.arrow_drop_down),
                         ],
                       ),
                     ],
@@ -55,7 +58,8 @@ class _MainFoodPageState extends State<MainFoodPage> {
                         color: Colors.white,
                       ),
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
+                          borderRadius:
+                              BorderRadius.circular(Dimensions.radious15),
                           color: AppColors.mainColor),
                     ),
                   )

@@ -14,15 +14,23 @@ class Dimensions {
   static double height10 = screenHeight / 74.55999755859375;
   static double height20 = screenHeight / 37.279;
   static double height15 = screenHeight / 52.0727;
+  static double height30 = screenHeight / 26.036;
+  static double height45 = screenHeight / 17.3575;
+  static double height65 = screenHeight / 12.0167;
+
 //dynamic width of padding and margin
 
   static double width10 = screenHeight / 74.55999755859375;
   static double width20 = screenHeight / 37.279;
   static double width15 = screenHeight / 52.0727;
   static double width30 = screenHeight / 26.036;
+  static double width45 = screenHeight / 17.3575;
 
 //dynamic font
   static double font20 = screenHeight / 37.279;
+//radious
+
+  static double radious15 = screenHeight / 52.0727;
   static double radious20 = screenHeight / 37.279;
   static double radious30 = screenHeight / 26.036;
 }
